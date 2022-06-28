@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    list-style:none;
+    color:black;
+}
+
+a{
+    text-decoration:none;
+    display:block;
+}
+
+body{
+    position:relative;
+    width:100%;
+}
+
+.contor{
+    display:inline-block;   
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    text-align:center;
+    padding:18px;
+    position:fixed;
+    width:100%;
+}
+
+.menu{
+    font-size:18px;
+    background:rgb(255, 251, 230);
+}
+
+.navi{
+    display:flex;
+    padding:0;
+}
+
+.navi a{
+    padding:8px 30px 8px 30px;
+    color:#333;
+}
+
+.navi li:hover{
+    background:rgb(231, 177, 141);
+    border-radius:4px;
+}
+
+.imgslide{
+    display:flex;
+    overflow:hidden;
+    padding-top:90px;
+}
+
+.imgslide img{
+    width:100vw;
+}
+
+.btn{
+    position:absolute;
+    top:45%;
+    left:5%;
+    display:flex;
+    justify-content:space-between;
+    font-size:2rem;
+    width:90%;
+}
+
+.btn i{
+    color:white;
+    opacity:0.5;
+}
+.btn i:hover{
+    font-size:2.3rem;
+}
+
+@media screen and (max-width:768px) {
+    nav{
+        flex-direction:column;
+        padding:5px;
+    }
+
+    .navi a{
+        padding:8px 15px 8px 15px;
+    }
+
+    .imgslide{
+        padding-top:100px;
+    }
+}
+
+@media screen and (max-width:468px) {
+    .navi li{
+        font-size:15px;
+        padding:0;
+    }
+
+    nav{
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+}
